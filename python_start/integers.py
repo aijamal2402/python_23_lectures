@@ -55,3 +55,16 @@ round(2.3456, 2) # 2.35
 # num1 = float(input('Введите первое число '))
 # num2 = float(input('Введите второе число '))
 # print('Результат ', num1 + num2)
+
+
+# x = 1
+# x + 1
+# print(x) # 1
+
+# x = 2
+# x = x + 1
+# print(x) # 3
+
+# x = 3
+# x += 1 # x = x + 1
+# print(x) # 4
