@@ -73,3 +73,78 @@ str8 = '   my name is akbar    '
 # str8.rstrip() # - убирает пробелы справа
 
 # print(str8.isalpha())
+
+
+string = 'My test string 123'
+# print(string.isdigit())
+string.isalpha() # False
+string.isalnum() # False
+string.isspace() # False
+string.islower() 
+string.isupper()
+string.endswith('123')
+string.startswith('My')
+
+
+num1 = 10
+num2 = 20
+num1 > num2 # False
+num1 < num2 # True
+num1 == num2 # False
+num1 != num2 # True - неравенство
+num1 <= num2 # True
+num1 >= num2 # False
+
+
+# str1 = 'apple'
+# str2 = 'abple'
+# print(str1 > str2)
+# ord('a') # 97
+# chr(97) # 'a'
+# ASCII
+
+# a = 'abcde'
+# b = 'abced'
+# print(sorted(a))
+# print(sorted(b))
+
+
+""" Форматирование/интерполяция строк """
+
+stat = 'Привет, Фархад! Приглашаю тебя на праздник!'
+
+# name = input()
+# place = input()
+# %
+# str5 = 'Привет, %s!' % name
+# print(str5)
+# str6 = 'Привет, {}! Приглашаю тебя на {}'.format(place, name)
+# print(str6)
+# str7 = f'Hello {name}! Welcome to {place}'
+# print(str7)
+
+
+# Форматирование строк - подстановка переменных в строку, создание динамической строки
+
+""" Экранирование строк """
+
+# a = 'I\'m student'
+# b = 'Идет бычок качается,\n\tВздыхает на ходу'
+# print(b)
+# # \n - newline
+# # \t - tabular
+
+# str8 = r'This is test string\n\t\n'
+# print(str8)
+# raw
+
+# windows_path = 'Users\Documents\\new_folder'
+# print(windows_path)
+
+# string = 'Hello world'
+# string2 = 'ell'
+# print(string2 in string)
+
+# dir(obj) - функция возвращает список методов доступных переданному объекту
+# str1 = 'hello'
+# print(dir(str1))
