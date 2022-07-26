@@ -140,5 +140,47 @@ not True # False
 True + True # 2
 
 # a = 10
+# [действие1, действие2][условие]
 # print(['ok', 'not ok'][a > 5])
 
+
+""" Тернарный оператор """
+# a = ''
+# msg = input('Введите сообщение ')
+# if len(msg) > 10:
+#        a = 'Сообщение длиннее 10 символов'
+# else:
+#        a = 'Сообщение меньше 10 символов'
+# print(a)
+
+# msg = input('Введите сообщение ')
+# a = 'Сообщение длиннее 10 символов' if len(msg) > 10 else 'Сообщение меньше 10 символов'
+# print(a)
+# действие if условие else другое_действие
+
+
+# a = 1
+# if a:
+#        print('ok')
+
+
+# color = input('выберите цвет ')
+# match color:
+#        case 'red':
+#               print('ok, red')
+#        case 'white':
+#               print('ok, white')
+#        case 'black':
+#               print('ok, black')
+#        case _:
+#               print('we don\'t have this color')
+
+
+
+# a = 'string'
+# assert len(a) == 0
+# print('It\'s ok')
+
+# first_num = int(input('1 '))
+# assert first_num == 30, 'число не верное'
+# print('число верное!')
