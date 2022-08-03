@@ -1,0 +1,111 @@
+
+
+#Словарь - измяемый итерируемый Состоят  из пар 
+#ключи должны быть уникальным 
+ 
+#dict_ {}
+#1-й
+#passport = {'name': 'Aijamal', 'last name': 'Jumak', 'age': 23, 'gender': 'M', 'birtday': '24.02.2000'}
+
+#print(passport['name']) # Aijamal
+#print(passport['age']) #22
+
+#2-й
+#dict2 = dict(name='Aijamal', last_name='Jumak', age='22')
+#print(dict2['name'])
+
+#3-й
+#dict3 = dict.fromkeys(['a', 'b', 'c'], 25)
+#print(dict3) #{'a': 25, 'b': 25, 'c': 25}
+
+#dict4 = dict.fromkeys(['a', 'b', 'c'])
+#print(dict4) # {'a': None, 'b': None, 'c': None}
+
+#4-й
+#dict5 = dict([('name', 'Aija'), ('last_name', 'Jumak')])
+#print(dict5['name'])
+
+'''методы '''
+passport = {'name': 'Aijamal', 'last name': 'Jumak', 'age': 23, 'gender': 'M', 'birtday': '24.02.2000'}
+
+#passport['name']
+#passport['id'] #KeyError
+
+#print(passport.get('name'))
+#print(passport.get('id'))
+
+#dict.get(key, None) - отдает значение указанного ключа если нет - отдает второе указанное значение (по умолчанию None)
+
+#print(passport.get('Id', 'no have key')) # no have key
+
+#passport.setdefault(key, None) - отдает  значение указанного ключа если его нет создает его со значениеdefault (по умолчанию  None)
+
+#print(passport.setdefault('age')) # 23
+#print(passport.setdefault('id')) # None
+#print(passport.setdefault('id', 5676476)) #5676476
+
+#passport.update({key: value}) - принимает в себя другой словарь и обновляет исходный словарь за счёт него 
+
+#dict8 = {'name': 'aija', 'age': 27, 'name': 'tily'}
+#passport.update(dict8)
+#print(passport) #{'name': 'tily', 'last name': 'Jumak', 'age': 27, 'gender': 'M', 'birtday': '24.02.2000'}
+#print(dict8) #{'name': 'tily', 'age': 27}
+
+#a = {'a': 10, 'b': 20}
+#a['c'] = 30
+#a['b'] = 50 # {'a': 10, 'b': 50, 'c': 30}
+#print(a) #{'a': 10, 'b': 20, 'c': 30}
+
+
+dict10 = {'name': 'Home', 'last_name': 'Lender', 'age': 45}
+#dict10.pop('name') #  pop удаляет
+#print(dict10)
+
+#deleted_el = dict10.pop('id', 'no have any key')
+#print(deleted_el) #no have any key
+
+#dict10 .popitem() # уделяет и возврат в виде кортежа 
+
+#dict11.clear()
+#print(dict11) # {}
+
+#del dict10['age']
+#print(dict10) # {'name': 'Home', 'last_name': 'Lender'}
+
+
+iter_dict = {'a': 10, 'b': 20, 'c': 50, 'd': 45}
+#for i in iter_dict:
+ #   print(i) #keys
+    
+#for i in iter_dict:
+#    print(iter_dict[i]) # values
+
+'''keys(), values(), items()'''
+
+k = iter_dict.keys()
+#print(k) #dict_keys(['a', 'b', 'c', 'd'])
+for key in k: 
+    print(key) #a
+    
+v = iter_dict.values()
+#print(v) #dict_values([10, 20, 50, 45])
+for value in v:
+    print(v) #dict_values([10, 20, 50, 45])
+
+i = iter_dict.items()
+#print(i) #dict_items([('a', 10), ('b', 20), ('c', 50), ('d', 45)])
+for key, value in i:
+    print(f'key {key}, val {value}') # key a, val 10
+    
+    
+contacts = {
+    'name': {
+    'aidar': 089878676, 
+    'dop': 09878,
+    'lklk': 09089    }}
+print(contacts['name'] ['aidar'])
+
+contacts_copy = contacts.copy() 
+
+#deepcopy?
+
