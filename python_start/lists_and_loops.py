@@ -298,3 +298,10 @@ iter_list = [1, 2, 3, 4, 5]
 #                 break
 # else:
 #         print('цикл окончен')
+
+
+
+
+us = ['aija', 'mal']
+for u in us:
+        print(f"Hi" {us} )
